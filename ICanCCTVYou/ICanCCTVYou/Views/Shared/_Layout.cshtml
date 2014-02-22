@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Scripts/leaflet/leaflet.css" rel="stylesheet" />
+   
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCAhiUsTP8KZWkUThTxg-bRVZ2o8ZQ80o&sensor=true"></script>
+
+    <script src="~/Scripts/leaflet/leaflet.js"></script>
+
+    <script src="~/Scripts/leaflet/leaflet.google.js"></script>
+    
+    <script src="~/Scripts/leaflet.awesome-markers/leaflet.awesome-markers.min.js"></script>
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    
+    <link href="~/Scripts/leaflet.awesome-markers/leaflet.awesome-markers.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        html, body, #map {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    @RenderBody()
+
+    <script src="~/Scripts/map.js"></script>
+</body>
+</html>
